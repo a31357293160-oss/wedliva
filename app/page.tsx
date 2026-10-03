@@ -1,5 +1,5 @@
-import { redirect } from "next/navigation";
+import HomePage from "@/components/HomePage";
 
-export default function Home() {
-  redirect("/invite/ayesha-danish");
+export default function Page() {
+  return <HomePage />;
 }

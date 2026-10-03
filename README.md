@@ -1,78 +1,27 @@
-# WedLiva — Luxury Digital Wedding Invitation
+# WedLiva — Luxury Digital Wedding Invitations
 
-A mobile-first interactive wedding invitation built with:
+Premium Next.js + Tailwind landing page plus the existing invitation demo.
 
-- Next.js App Router
-- TypeScript
-- Tailwind CSS
-- Framer Motion
+## Routes
 
-## 1. Install
+- `/` — premium WedLiva homepage
+- `/invite/ayesha-danish` — live invitation demo
+
+## Local development
 
 ```bash
 npm install
-```
-
-## 2. Run locally
-
-```bash
 npm run dev
 ```
 
-Open:
+Open `http://localhost:3000`.
 
-http://localhost:3000/invite/ayesha-danish
+## Deploy
 
-## 3. Add music
+Push the project contents to the `main` branch of the GitHub repository connected to Vercel. Vercel will build and deploy automatically.
 
-Put a licensed MP3 at:
+## Notes
 
-```text
-public/music/wedding.mp3
-```
-
-## 4. Customize the demo
-
-Edit:
-
-```text
-lib/invitation.ts
-```
-
-The first template currently includes:
-
-- Luxury opening screen
-- Animated couple names
-- Open Invitation button
-- Background music control
-- Family names
-- Scratch-to-reveal wedding date
-- Event timeline
-- Countdown
-- Venue and Google Maps button
-- WhatsApp RSVP/share
-- Copy invitation link
-- Responsive mobile-first layout
-
-## 5. Deploy to Vercel
-
-Push this folder to GitHub, then import the repository into Vercel.
-
-No environment variables are required for this demo.
-
-## Next production phase
-
-For a real WedLiva SaaS, add:
-
-1. Supabase database
-2. Customer authentication
-3. Template database
-4. Image storage
-5. Invitation editor
-6. Payment gateway
-7. Unique invitation URLs
-8. RSVP dashboard
-9. Admin dashboard
-10. Analytics
-11. Custom domains
-12. Multiple languages
+- Pricing shown on the homepage is illustrative launch pricing.
+- Template previews are CSS-built placeholders, so the homepage works without external image assets.
+- The architecture is ready for a future template gallery, invitation builder, checkout and customer dashboard.
